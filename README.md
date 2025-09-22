@@ -1,1 +1,162 @@
-# ellynpatz.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #portfolio .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Contact form */
+    form {
+      max-width: 400px;
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    input, textarea, button {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal website!</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hello!</h2>
+    <p>I’m [Your Name], an aspiring [Your Profession].</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Write a short bio here about your background, skills, and interests.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>Short description of your project.</p>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Another project description.</p>
+      </div>
+      <div class="project">
+        <h3>Project Three</h3>
+        <p>Another project description.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
