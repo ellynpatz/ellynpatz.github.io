@@ -1,221 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-align: center;
-      position: relative;
-    }
-
-    header h1 {
-      margin-bottom: 0.5rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    #portfolio .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .project {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: background 0.3s, color 0.3s;
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    /* Contact form */
-    form {
-      max-width: 400px;
-      margin: 1rem auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    input, textarea, button {
-      padding: 0.7rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #555;
-    }
-
-    /* Dark mode styles */
-    body.dark {
-      background: #121212;
-      color: #f4f4f9;
-    }
-
-    body.dark header {
-      background: #1e1e1e;
-    }
-
-    body.dark footer {
-      background: #1e1e1e;
-    }
-
-    body.dark .project {
-      background: #1e1e1e;
-      border: 1px solid #444;
-    }
-
-    /* Dark mode toggle button */
-    #dark-mode-toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    body.dark #dark-mode-toggle {
-      background: #333;
-      color: #fff;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>My Portfolio</h1>
-    <p>Welcome to my personal website!</p>
-    <button id="dark-mode-toggle">🌙 Dark Mode</button>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home">
-    <h2>Hello!</h2>
-    <p>I’m Joellyn Patrona, an aspiring Virtual Assistant particularly in aiding bookkeeping/finance related operations and administrative.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <h3>Educational Background</h3>
-    <p>I had my degree of Bachelor of Science in Management Accounting at Central Philippines University</p>
-    <img src="">
-    <p>I graduated with Latin Honor (Cum Laude) and can say I had a solid foundation in accounting and finance</p>
-    <h3>Work Experience</h3>
-    <h4>Internship at Commision on Audit</h4>
-    <p>I had my intership at Commission on Audit where I was assigned in the Legal Department under the supervision of an Administrative Assistant</p>
-    <h3>Skills</h3>
-    <h3>Interests</h3>
-  </section>
-
-  <section id="portfolio">
-    <h2>My Work</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Project One</h3>
-        <p>Short description of your project.</p>
-      </div>
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>Another project description.</p>
-      </div>
-      <div class="project">
-        <h3>Project Three</h3>
-        <p>Another project description.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 My Portfolio | Built with ❤️</p>
-  </footer>
-
-  <script>
-    const toggleBtn = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('dark');
-      toggleBtn.textContent = body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joellyn Patrona's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Joellyn Patrona's Portfolio</h1>
+      <p>
+        Hello there! Welcome to my portfolio. Feel free to click around and
+        get to know more about me and my capabilities
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#About-Me">About Me</a></li>
+          <li><a href="#Academic-Background">Academic Background</a></li>
+          <li><a href="#Work-Experience">Work #Work-Experience</a></li>
+          <li><a href="#Skills-Certs-Interests">Skills, Certifications, and Interests</a></li>
+          <li><a href="#Projects">Projects/Outputs</a></li>
+      </nav>
+    </header>
+    
+    <main>
+      
+      <section id="About-Me">
+        <h2>About Me</h2>
+        <p>This is me and to start things up, I'm currently in my journey of starting my adult life a.k.a. <em>job hunting</em>. Below are some things you might want to click to get to know more of me! Enjoy reading and I hope to meet you soon!</p>
+      </section>
+      <section id="Academic-Background">
+        <h2>Academic Background</h2>
+        <p>I am a graduate of Bachelor of Science in Management Accounting at Central Philippine University. I am proud to say that I graduated with Latin Honors which shows that I had a solid foundation of accounting and finance.</p>
+      </section>
+      <section id="Work-Experience">
+        <h2>Work Experience</h2>
+        <p>This is where I had my internship.</p>
+        <p>I worked under the Legal Department of Commission on Audit most of the times. I was tasked with some clerical things such as organizing documents and facilitating communication with other departments. </p>
+        <p>On fridays, we were assigned in the Administrative Department. I was assigned on tasks with relation to the Leave records of employees, ensuring accurate information and calculation. </p>
+        <p>I was also tasked with account reconciliation by the Accounting Section, handling different financial statements and re-checking for the amounts and accuracy of the accounts. </p>
+        <p>In Procurement Section, I was asked to rechecked if procured items are shipped to other branches or if requested iterms are procured/shipped.
+        </p>
+        <p>This intership has helped me a lot in knowing how the working environment is. It has helped me develop my skills such as my attention to detail which my supervisor had personally commended me. I had also know how to maintain professionalism and confidentiality in a workplace especially since I am under a department that deals a lot with sensitive information which I believe is very crucial for an accounting professional. This program also thought me to develop my interpersonal skills, helping me cope up with how to handle communication with different type of people.</P>
+      <section id="Skills-Certs-Interests">
+        <h2>Skills, Certifications and Interests</h2>
+        <ul>Skills</ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        <ul>Certifications</ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        <ul>Interests</ul>
+          <li></li>
+          <li></li>
+          <li></li>
+      </section>
+      <section id="Projects">
+        <h2>Projects and Outputs</h2>
+        <h3>QuickBooks</h3>
+        <h3>Xero</h3>
+        <h3>Excel</h3>
+        <h3>Google Sheets</h3>
+      </section>
+    </main>
+  </body>
 </html>
-
